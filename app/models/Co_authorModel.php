@@ -30,7 +30,7 @@ class Co_authorModel extends Model
      ** get
      *
      * @param  mixed $id
-     * @return Book
+     * @return Co_author
      */
     public function get(int $id): Co_author
     {

@@ -30,7 +30,7 @@ class AuthorModel extends Model
      ** get
      *
      * @param  mixed $id
-     * @return Book
+     * @return Author
      */
     public function get(int $id): Author
     {

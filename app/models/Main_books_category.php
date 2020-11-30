@@ -4,7 +4,7 @@
 namespace app\models;
 
 
-class Books_category extends ModelObject
+class Main_books_category extends ModelObject
 {
     public int $id;
     public string $name;
@@ -13,7 +13,7 @@ class Books_category extends ModelObject
     /**
      * __construct
      *
-     * @param  mixed $books_category
+     * @param  mixed $main_books_category
      * @return void
      */
     public function __construct(array $main_books_category)

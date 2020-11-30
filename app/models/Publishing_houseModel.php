@@ -7,7 +7,7 @@ use app\db\BaseSQLOperations;
 use app\db\DbConnection;
 
 
-class Books_categoryModel extends Model
+class Publishing_houseModel extends Model
 {
     private DbConnection $connection;
     public function __construct(DbConnection $connection)
@@ -23,18 +23,18 @@ class Books_categoryModel extends Model
      */
     public function get_all(): array
     {
-        return BaseSQLOperations::select($this->connection, "books_category", null, "Books_category");
+        return BaseSQLOperations::select($this->connection, "publishing_house", null, "Publishing_house");
     }
     /**
      ** 
      ** get
      *
      * @param  mixed $id
-     * @return Books_category
+     * @return Publishing_house
      */
-    public function get(int $id): Books_category
+    public function get(int $id): Publishing_house
     {
-        return BaseSQLOperations::select($this->connection, "books_category", "id = $id", "Books_category");
+        return BaseSQLOperations::select($this->connection, "publishing_house", "id = $id", "Publishing_house");
     }
     /**
      ** 

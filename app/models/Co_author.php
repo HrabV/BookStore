@@ -8,6 +8,7 @@ class Co_author extends ModelObject
     public int $id;
     public string $fio;
     public int $country_id;
+    public int $book_id;
     public string $birthday;
     public string $photo;
     
@@ -22,6 +23,7 @@ class Co_author extends ModelObject
         $this->id = $author['id'];
         $this->fio = $author['fio'];
         $this->country_id = $author['country_id'];
+        $this->book_id = $author['book_id'];
         $this->birthday = $author['birthday'];
         $this->photo = $author['photo'];
        
@@ -52,6 +54,15 @@ class Co_author extends ModelObject
     public function get_country_id(): int
     {
         return $this->country_id;
+    }
+     /**
+     * get_book_id
+     *
+     * @return int
+     */
+    public function get_book_id(): int
+    {
+        return $this->book_id;
     }
     /**
      * get_birthday
@@ -91,6 +102,17 @@ class Co_author extends ModelObject
     public function set_country_id(int $country_id)
     {
         $this->country_id = $country_id;
+    }
+
+    /**
+     * set_book_id
+     *
+     * @param  mixed $book_id
+     * @return void
+     */
+    public function set_book_id(int $book_id)
+    {
+        $this->book_id = $book_id;
     }
     /**
      * set_birthday

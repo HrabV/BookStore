@@ -30,9 +30,9 @@ class Main_books_categoryModel extends Model
      ** get
      *
      * @param  mixed $id
-     * @return Book
+     * @return Main_books_category
      */
-    public function get(int $id): Author
+    public function get(int $id): Main_books_category
     {
         return BaseSQLOperations::select($this->connection, "main_books_category", "id = $id", "Main_books_category");
     }
