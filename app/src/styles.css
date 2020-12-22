@@ -1,0 +1,36 @@
+@import url("https://fonts.googleapis.com/css2?family=Nerko+One&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.book {
+  @apply rounded;
+  @apply bg-white;
+  @apply overflow-hidden;
+  @apply shadow-sm;
+}
+
+.btn {
+  @apply rounded-full;
+  @apply uppercase;
+  @apply text-xs;
+  @apply font-bold;
+  @apply cursor-pointer;
+  @apply py-2;
+  @apply px-3;
+  @apply tracking-wider;
+}
+
+.dropdown:hover .dropdown-menu {
+  display: block;
+}
+
+#nav-content[aria-expanded="true"] {
+  display: block;
+}
+#nav-toggle[aria-expanded="true"] .close {
+  display: inline-block;
+}
+#nav-toggle[aria-expanded="true"] .open {
+  display: none;
+}
