@@ -1,0 +1,23 @@
+{
+  "name": "bookstore",
+  "version": "1.0.0",
+  "description": "- ### Host `h56.hvosting.ua`\r - ### Database `bookstore`\r - ### User `bookstoreuser`\r - ### Password `r4HdqtqO`\r - ### Port `3260`",
+  "main": "index.js",
+  "scripts": {
+    "build-css": "tailwindcss build app/src/styles.css -o app/public/styles.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/HrabV/BookStore.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/HrabV/BookStore/issues"
+  },
+  "homepage": "https://github.com/HrabV/BookStore#readme",
+  "dependencies": {
+    "tailwindcss": "^2.0.1"
+  }
+}
